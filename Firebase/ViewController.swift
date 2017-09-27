@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     //var ref: DatabaseReference!
     
+    func awesomeFunction() -> String{
+        return "Awesome!"
+    }
+        
     
     @IBAction func passwordEdit(_ sender: Any) {
         if(email.text != "" && password.text != ""){
