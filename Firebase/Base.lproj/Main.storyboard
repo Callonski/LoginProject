@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.54568142361111116" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="16l-6w-Yru" firstAttribute="leading" secondItem="65Q-X0-gvM" secondAttribute="leading" constant="40" id="0kw-1P-JZ9"/>
                             <constraint firstItem="65Q-X0-gvM" firstAttribute="trailing" secondItem="j82-4x-uqR" secondAttribute="trailing" constant="40" id="GI1-9l-aEg"/>
@@ -124,7 +124,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.39048936631944442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zid-FV-fZ1" secondAttribute="trailing" constant="40" id="0Iy-MV-f9P"/>
                             <constraint firstItem="7Vj-zI-Cy5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="52L-4B-k4U"/>
@@ -183,7 +183,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.3866916232638889" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AhZ-WN-yS4" firstAttribute="leading" secondItem="Fkx-hA-f9N" secondAttribute="leading" constant="100" id="4WW-X0-oco"/>
                             <constraint firstItem="KxM-VF-FHd" firstAttribute="leading" secondItem="Fkx-hA-f9N" secondAttribute="leading" constant="153" id="Evr-de-h79"/>
