@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB06F0C91F84E1A600326769 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB06F0C81F84E1A600326769 /* ProfileViewController.swift */; };
+		EB08C4A61F7E391800BF5D39 /* avatarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08C4A51F7E391800BF5D39 /* avatarPicker.swift */; };
 		EBE551801F751D0E00B1F2AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */; };
 		EBE551821F751D0E00B1F2AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE551811F751D0E00B1F2AA /* ViewController.swift */; };
 		EBE551851F751D0E00B1F2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE551831F751D0E00B1F2AA /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		4C7066E6E0DB1EC44E0B4D91 /* Pods_LoginFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6442BC8A2C9A29C2DB986EB6 /* Pods-LoginFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginFirebase/Pods-LoginFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		EB06F0C81F84E1A600326769 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EB08C4A51F7E391800BF5D39 /* avatarPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarPicker.swift; sourceTree = "<group>"; };
 		EBE5517C1F751D0E00B1F2AA /* LoginFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE551811F751D0E00B1F2AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				EBE551931F75284400B1F2AA /* StartViewController.swift */,
 				EBE551811F751D0E00B1F2AA /* ViewController.swift */,
 				EBE551951F7529CD00B1F2AA /* SignUpViewController.swift */,
+				EB08C4A51F7E391800BF5D39 /* avatarPicker.swift */,
+				EB06F0C81F84E1A600326769 /* ProfileViewController.swift */,
 				EBE551831F751D0E00B1F2AA /* Main.storyboard */,
 				EBE551861F751D0E00B1F2AA /* Assets.xcassets */,
 				EBE551881F751D0E00B1F2AA /* LaunchScreen.storyboard */,
@@ -233,7 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB06F0C91F84E1A600326769 /* ProfileViewController.swift in Sources */,
 				EBE551821F751D0E00B1F2AA /* ViewController.swift in Sources */,
+				EB08C4A61F7E391800BF5D39 /* avatarPicker.swift in Sources */,
 				EBE551801F751D0E00B1F2AA /* AppDelegate.swift in Sources */,
 				EBE551961F7529CD00B1F2AA /* SignUpViewController.swift in Sources */,
 				EBE551941F75284400B1F2AA /* StartViewController.swift in Sources */,

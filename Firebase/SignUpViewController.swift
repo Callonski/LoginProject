@@ -14,30 +14,33 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var usernameTextfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+            avatarImage.image = UIImage(named:"userAvatar")
+            avatarImage.translatesAutoresizingMaskIntoConstraints = true
+            avatarImage.contentMode = .scaleAspectFill
+            avatarImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSelectProfileImageView)))
+            avatarImage.isUserInteractionEnabled = true
+      
         if(email.text == "" || password.text == "") {
         signUpButton.isEnabled = false
         }
         // Do any additional setup after loading the view.
     }
+   // lazy var profileImageView: UIImageView
+    
+    
     @IBAction func editPassword(_ sender: Any) {
          if(email.text != "" && password.text != ""){
             signUpButton.isEnabled = true
         }
     }
     
-    @IBAction func signUp(_ sender: Any) {
-       
-        Auth.auth().createUser(withEmail: email.text!, password: password.text!){ (user, error) in
-            self.dismiss(animated: true, completion: nil)
-
-            Auth.auth().currentUser?.sendEmailVerification { (error) in
-                print("Please Verify your email before you loggin")
-            }
-            
-        }
-    }
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

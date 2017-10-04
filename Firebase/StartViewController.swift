@@ -9,63 +9,42 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import Firebase
+import FirebaseStorage
 
 class StartViewController: UIViewController {
-    
     @IBOutlet weak var welcomeTextField: UILabel!
-    
-     @IBOutlet weak var logoutButton: UIButton!
-    @IBAction func logoutButtons(_ sender: Any) {
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
-        performSegue(withIdentifier: "logout", sender: nil)
-    }
+    @IBOutlet weak var textFieldToSave: UITextField!
+    @IBOutlet weak var logoutButton: UIButton!
+    var ref: DatabaseReference!
+    var myArray:[String:String] = [:]
+    var myNumber = 1
 
+    @IBAction func profile(_ sender: Any) {
+        performSegue(withIdentifier: "showProfile", sender: nil)
+    }
     
+    @IBAction func saveButton(_ sender: Any) {
+        self.ref.child("users").child((Auth.auth().currentUser!.uid)).setValue(myArray)
+        textFieldToSave.text = ""
+    }
+   
     override func viewWillAppear(_ animated: Bool) {
-        Auth.auth().addStateDidChangeListener { (auth, user) in
-            // ...
-        }
-        
-        if Auth.auth().currentUser == nil {
+        if(Auth.auth().currentUser == nil){
             performSegue(withIdentifier: "login", sender: nil)
 
-        }else { welcomeTextField.text = "Welcome \(String(describing: Auth.auth().currentUser!.email!)) Verified email: \(String(describing: Auth.auth().currentUser!.isEmailVerified))"
-            
         }
-     
-        
     }
     
-   
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
+
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

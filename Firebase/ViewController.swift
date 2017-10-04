@@ -8,7 +8,7 @@
 
 import UIKit
 import FirebaseAuth
-
+import FirebaseDatabase
 
 class ViewController: UIViewController {
 
@@ -18,10 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     //var ref: DatabaseReference!
     
-    func awesomeFunction() -> String{
-        return "Awesome!"
-    }
-        
     
     @IBAction func passwordEdit(_ sender: Any) {
         if(email.text != "" && password.text != ""){
@@ -36,10 +32,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       //ref = Database.database().reference()
         
     }
-
+    
+    
+    @IBAction func forgotButton(_ sender: Any) {
+        if(email.text != ""){
+            Auth.auth().sendPasswordReset(withEmail: email.text!) { (error) in
+            // ...
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
        
@@ -54,12 +58,10 @@ class ViewController: UIViewController {
             
             if(error != nil){
                 print("Kunde inte logga in")
-            }else if (Auth.auth().currentUser!.isEmailVerified){
+            }else{ //if (Auth.auth().currentUser!.isEmailVerified){
                 self.dismiss(animated: true, completion: nil)
-
-            }else{
-                print("Please verify your email")
             }
+        //else{ print("Please verify your email")}
         }
     }
     
