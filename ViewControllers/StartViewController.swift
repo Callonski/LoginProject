@@ -11,10 +11,19 @@ import FirebaseDatabase
 import Firebase
 import FirebaseStorage
 
-class StartViewController: UIViewController {
-    @IBOutlet weak var welcomeTextField: UILabel!
-    @IBOutlet weak var textFieldToSave: UITextField!
-    @IBOutlet weak var logoutButton: UIButton!
+
+
+class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! Cell
+        return cell
+    }
+    
+   
     var ref: DatabaseReference!
     var myArray:[String:String] = [:]
     var myNumber = 1
@@ -23,10 +32,7 @@ class StartViewController: UIViewController {
         performSegue(withIdentifier: "showProfile", sender: nil)
     }
     
-    @IBAction func saveButton(_ sender: Any) {
-        self.ref.child("users").child((Auth.auth().currentUser!.uid)).setValue(myArray)
-        textFieldToSave.text = ""
-    }
+   
    
     override func viewWillAppear(_ animated: Bool) {
         if(Auth.auth().currentUser == nil){

@@ -20,19 +20,14 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UILabel!
     @IBOutlet weak var emailTextField: UILabel!
     
-    
-    
     @IBAction func logoutButtons(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
-            self.dismiss(animated: true, completion: {
-                self.dismiss(animated: true, completion: nil)
-            }
-            )
+            self.dismiss(animated: true, completion: nil)
 
         } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
+            print ("Det sket sig!", signOutError)
         }
         self.performSegue(withIdentifier: "logout", sender: nil)
 
@@ -50,7 +45,6 @@ class ProfileViewController: UIViewController {
             print(uid)
             ref.child("users").child(uid).observe(DataEventType.value, with: { (snapshot) in
                 if (snapshot.value == nil) {
-                  //  self.welcomeTextField.text = self.theMessage(message: ["":"Det sket sig"])
                 }else{
                     let dict = snapshot.value as? [String:String] ?? [:]
                     self.myDict = dict
@@ -81,10 +75,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("!!!!!!!!!!!! \(myDict["name"])")
-       // self.userNameTextField.text = myDict["name"]
-        //self.emailTextField.text = myDict["email"]
-        // Do any additional setup after loading the view.
+     
     }
 
     override func didReceiveMemoryWarning() {

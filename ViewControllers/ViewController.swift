@@ -5,7 +5,6 @@
 //  Created by Calle Engene on 2017-09-22.
 //  Copyright © 2017 Calle Engene. All rights reserved.
 //
-
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
