@@ -11,6 +11,9 @@
 		EB08C4A61F7E391800BF5D39 /* avatarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08C4A51F7E391800BF5D39 /* avatarPicker.swift */; };
 		EB0AE3DF1F97A88E009D3978 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AE3DE1F97A88E009D3978 /* Cell.swift */; };
 		EB5657761F850183001B38BE /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5657751F850183001B38BE /* ScannerViewController.swift */; };
+		EB9A94871F9872F0008334F3 /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A94861F9872F0008334F3 /* Pets.swift */; };
+		EB9A948D1F992BE0008334F3 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A948C1F992BE0008334F3 /* TableViewDelegate.swift */; };
+		EB9A948F1F99C513008334F3 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A948E1F99C513008334F3 /* PetViewController.swift */; };
 		EBE551801F751D0E00B1F2AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */; };
 		EBE551821F751D0E00B1F2AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE551811F751D0E00B1F2AA /* ViewController.swift */; };
 		EBE551851F751D0E00B1F2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE551831F751D0E00B1F2AA /* Main.storyboard */; };
@@ -29,13 +32,16 @@
 		EB08C4A51F7E391800BF5D39 /* avatarPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarPicker.swift; sourceTree = "<group>"; };
 		EB0AE3DE1F97A88E009D3978 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		EB5657751F850183001B38BE /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		EB9A94861F9872F0008334F3 /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
+		EB9A948C1F992BE0008334F3 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
+		EB9A948E1F99C513008334F3 /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 		EBE5517C1F751D0E00B1F2AA /* LoginFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE551811F751D0E00B1F2AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBE551841F751D0E00B1F2AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBE551861F751D0E00B1F2AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBE551891F751D0E00B1F2AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EBE5518B1F751D0E00B1F2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE5518B1F751D0E00B1F2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ViewControllers/Info.plist; sourceTree = "<group>"; };
 		EBE551931F75284400B1F2AA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		EBE551951F7529CD00B1F2AA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EBE551971F75300600B1F2AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -75,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				EB0AE3DE1F97A88E009D3978 /* Cell.swift */,
+				EB9A94861F9872F0008334F3 /* Pets.swift */,
 				EB08C4A51F7E391800BF5D39 /* avatarPicker.swift */,
 			);
 			path = Objects;
@@ -85,6 +92,7 @@
 			children = (
 				EBE551831F751D0E00B1F2AA /* Main.storyboard */,
 				EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */,
+				EBE5518B1F751D0E00B1F2AA /* Info.plist */,
 				EB0AE3DD1F97A7C9009D3978 /* Objects */,
 				EBE5517E1F751D0E00B1F2AA /* ViewControllers */,
 				EBE5517D1F751D0E00B1F2AA /* Products */,
@@ -105,13 +113,14 @@
 			isa = PBXGroup;
 			children = (
 				EBE551931F75284400B1F2AA /* StartViewController.swift */,
+				EB9A948E1F99C513008334F3 /* PetViewController.swift */,
+				EB9A948C1F992BE0008334F3 /* TableViewDelegate.swift */,
 				EBE551811F751D0E00B1F2AA /* ViewController.swift */,
 				EBE551951F7529CD00B1F2AA /* SignUpViewController.swift */,
 				EB06F0C81F84E1A600326769 /* ProfileViewController.swift */,
 				EB5657751F850183001B38BE /* ScannerViewController.swift */,
 				EBE551861F751D0E00B1F2AA /* Assets.xcassets */,
 				EBE551881F751D0E00B1F2AA /* LaunchScreen.storyboard */,
-				EBE5518B1F751D0E00B1F2AA /* Info.plist */,
 				EBE551971F75300600B1F2AA /* GoogleService-Info.plist */,
 			);
 			path = ViewControllers;
@@ -253,14 +262,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9A948D1F992BE0008334F3 /* TableViewDelegate.swift in Sources */,
 				EB5657761F850183001B38BE /* ScannerViewController.swift in Sources */,
 				EB06F0C91F84E1A600326769 /* ProfileViewController.swift in Sources */,
+				EB9A94871F9872F0008334F3 /* Pets.swift in Sources */,
 				EBE551821F751D0E00B1F2AA /* ViewController.swift in Sources */,
 				EB08C4A61F7E391800BF5D39 /* avatarPicker.swift in Sources */,
 				EBE551801F751D0E00B1F2AA /* AppDelegate.swift in Sources */,
 				EB0AE3DF1F97A88E009D3978 /* Cell.swift in Sources */,
 				EBE551961F7529CD00B1F2AA /* SignUpViewController.swift in Sources */,
 				EBE551941F75284400B1F2AA /* StartViewController.swift in Sources */,
+				EB9A948F1F99C513008334F3 /* PetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 848B6K27TX;
-				INFOPLIST_FILE = Firebase/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Namaka.Firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 848B6K27TX;
-				INFOPLIST_FILE = Firebase/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Namaka.Firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
