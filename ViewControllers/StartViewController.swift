@@ -16,7 +16,7 @@ import FirebaseStorage
 class StartViewController: UIViewController,UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     var pets = [Pet]()
-    let photo1 = UIImage(named: "pet1")
+    let photo1 = UIImage(named: "defaultDog")
     var ref: DatabaseReference!
     var myArray:[String:String] = [:]
     var myNumber = 1
@@ -26,7 +26,7 @@ class StartViewController: UIViewController,UITableViewDataSource {
     
     
     func loadPets() {
-       let pet1 = Pet(name: "Uma Gurman", breed: "DSG", gender: "Female", image: photo1! )
+       let pet1 = Pet(name: "Fido", breed: "Border Collie", gender: "Female", image: photo1! )
         pets += [pet1]
          pets += [pet1]
          pets += [pet1]

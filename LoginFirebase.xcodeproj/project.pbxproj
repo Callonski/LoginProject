@@ -10,10 +10,11 @@
 		EB06F0C91F84E1A600326769 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB06F0C81F84E1A600326769 /* ProfileViewController.swift */; };
 		EB08C4A61F7E391800BF5D39 /* avatarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08C4A51F7E391800BF5D39 /* avatarPicker.swift */; };
 		EB0AE3DF1F97A88E009D3978 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AE3DE1F97A88E009D3978 /* Cell.swift */; };
-		EB5657761F850183001B38BE /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5657751F850183001B38BE /* ScannerViewController.swift */; };
 		EB9A94871F9872F0008334F3 /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A94861F9872F0008334F3 /* Pets.swift */; };
 		EB9A948D1F992BE0008334F3 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A948C1F992BE0008334F3 /* TableViewDelegate.swift */; };
 		EB9A948F1F99C513008334F3 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A948E1F99C513008334F3 /* PetViewController.swift */; };
+		EB9A94911F99C930008334F3 /* CreatePetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A94901F99C930008334F3 /* CreatePetViewController.swift */; };
+		EB9A94961F99CF0B008334F3 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A94951F99CF0B008334F3 /* CreateViewController.swift */; };
 		EBE551801F751D0E00B1F2AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */; };
 		EBE551821F751D0E00B1F2AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE551811F751D0E00B1F2AA /* ViewController.swift */; };
 		EBE551851F751D0E00B1F2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE551831F751D0E00B1F2AA /* Main.storyboard */; };
@@ -31,10 +32,11 @@
 		EB06F0C81F84E1A600326769 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EB08C4A51F7E391800BF5D39 /* avatarPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarPicker.swift; sourceTree = "<group>"; };
 		EB0AE3DE1F97A88E009D3978 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		EB5657751F850183001B38BE /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		EB9A94861F9872F0008334F3 /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
 		EB9A948C1F992BE0008334F3 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		EB9A948E1F99C513008334F3 /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
+		EB9A94901F99C930008334F3 /* CreatePetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePetViewController.swift; sourceTree = "<group>"; };
+		EB9A94951F99CF0B008334F3 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateViewController.swift; path = "/Users/calle/Library/Autosave Information/Firebase/ViewControllers/CreateViewController.swift"; sourceTree = "<absolute>"; };
 		EBE5517C1F751D0E00B1F2AA /* LoginFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE551811F751D0E00B1F2AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,13 +89,22 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		EB9A94921F99C93D008334F3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */,
+				EB9A948C1F992BE0008334F3 /* TableViewDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		EBE551731F751D0E00B1F2AA = {
 			isa = PBXGroup;
 			children = (
 				EBE551831F751D0E00B1F2AA /* Main.storyboard */,
-				EBE5517F1F751D0E00B1F2AA /* AppDelegate.swift */,
-				EBE5518B1F751D0E00B1F2AA /* Info.plist */,
 				EB0AE3DD1F97A7C9009D3978 /* Objects */,
+				EBE5518B1F751D0E00B1F2AA /* Info.plist */,
+				EB9A94921F99C93D008334F3 /* Delegates */,
 				EBE5517E1F751D0E00B1F2AA /* ViewControllers */,
 				EBE5517D1F751D0E00B1F2AA /* Products */,
 				C458E3957FFF8BBA0CF67C2B /* Pods */,
@@ -114,11 +125,11 @@
 			children = (
 				EBE551931F75284400B1F2AA /* StartViewController.swift */,
 				EB9A948E1F99C513008334F3 /* PetViewController.swift */,
-				EB9A948C1F992BE0008334F3 /* TableViewDelegate.swift */,
+				EB9A94901F99C930008334F3 /* CreatePetViewController.swift */,
+				EB9A94951F99CF0B008334F3 /* CreateViewController.swift */,
 				EBE551811F751D0E00B1F2AA /* ViewController.swift */,
 				EBE551951F7529CD00B1F2AA /* SignUpViewController.swift */,
 				EB06F0C81F84E1A600326769 /* ProfileViewController.swift */,
-				EB5657751F850183001B38BE /* ScannerViewController.swift */,
 				EBE551861F751D0E00B1F2AA /* Assets.xcassets */,
 				EBE551881F751D0E00B1F2AA /* LaunchScreen.storyboard */,
 				EBE551971F75300600B1F2AA /* GoogleService-Info.plist */,
@@ -262,14 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9A94911F99C930008334F3 /* CreatePetViewController.swift in Sources */,
 				EB9A948D1F992BE0008334F3 /* TableViewDelegate.swift in Sources */,
-				EB5657761F850183001B38BE /* ScannerViewController.swift in Sources */,
 				EB06F0C91F84E1A600326769 /* ProfileViewController.swift in Sources */,
 				EB9A94871F9872F0008334F3 /* Pets.swift in Sources */,
 				EBE551821F751D0E00B1F2AA /* ViewController.swift in Sources */,
 				EB08C4A61F7E391800BF5D39 /* avatarPicker.swift in Sources */,
 				EBE551801F751D0E00B1F2AA /* AppDelegate.swift in Sources */,
 				EB0AE3DF1F97A88E009D3978 /* Cell.swift in Sources */,
+				EB9A94961F99CF0B008334F3 /* CreateViewController.swift in Sources */,
 				EBE551961F7529CD00B1F2AA /* SignUpViewController.swift in Sources */,
 				EBE551941F75284400B1F2AA /* StartViewController.swift in Sources */,
 				EB9A948F1F99C513008334F3 /* PetViewController.swift in Sources */,
